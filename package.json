@@ -1,0 +1,16 @@
+{
+  "name": "covid_bot",
+  "version": "1.0.0",
+  "description": "Get Covid data bot telegram",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "telegraf": "^3.38.0"
+  }
+}
