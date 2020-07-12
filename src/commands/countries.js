@@ -7,7 +7,7 @@ function countries(ctx) {
     .get('https://covid-api.com/api/regions')
     .then(({ data }) => {
       const parsedCountries = data.data
-        .map((country) => `${country.name} ISO CODE: ${country.iso}`)
+        .map((country) => `${country.name}`)
         .sort()
         .join('\n');
       ctx.reply(parsedCountries);
