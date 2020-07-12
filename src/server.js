@@ -4,9 +4,12 @@ const { Telegraf } = require('telegraf');
 const help = require('./commands/help');
 const countries = require('./commands/countries');
 const stats = require('./commands/stats');
+const dotenv = require('dotenv');
 
-const botName = '@CovidDataEliIFBot';
-const token = '1136866136:AAFRWC3anTidMycAwolwX6K16nIcOX_DliA';
+dotenv.config();
+
+const token = process.env.TOKEN;
+
 const bot = new Telegraf(token);
 
 bot.help(help);
